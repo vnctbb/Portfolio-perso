@@ -1,0 +1,444 @@
+*{
+	box-sizing: border-box;
+	color: #c94949;
+	font-family: Avenir, sans-serif;
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #072a49;
+	width: 100%;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+-------------------------- TITLE --------------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+.conteneur-l{
+	margin-top: 100px;
+}
+
+.conteneur-l h1{
+	font-size: 3em;
+	line-height: 50px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+	width: 300px;
+}
+
+.conteneur-l h1 a{
+	text-decoration: none;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+------------------------ BLOC-TEXTE -----------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+article h1{
+	font-size: 2em;
+	padding: 20px 10px 10px 10px;
+	text-align: center;
+}
+
+.bloc-texte h2{
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 20px;
+}
+
+.bloc-texte h2, .bloc-texte p{
+	color: white;
+	margin-bottom: 20px;
+	padding-left: 60px;
+	width: 80%;
+}
+
+span{
+	font-weight: bold;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+------------------------ CONTACT --------------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+.contact{
+	display: flex;
+	justify-content: center;
+}
+
+.contact > p{
+	padding: 0 10px;
+	margin-bottom: 60px;
+}
+
+.contact > a{
+	font-weight: bold;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+------------------------ PHOTOS ---------------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+.cam{
+	display: block;
+	width: 80%;
+	margin: 70px auto 40px auto;
+	box-shadow: 30px -30px #342f3b;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+------------------------ NAVIGATION -----------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+section input[type=checkbox]{
+	display: none;
+}
+
+.conteneur-d{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.conteneur-d > nav{
+	display: flex;
+	flex-flow: row;
+	height: 100%;
+}
+
+.conteneur-d nav a{
+	margin-left: 42%;
+}
+
+.conteneur-d nav a, .conteneur-d nav>label{
+	color: #c94949;
+	display: inline;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: -2px;
+	margin-right: 20px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+.select{
+	background-color: #c94949;
+	height: 100%;
+	margin-left: 500px;
+	position: fixed;
+	transition-duration: 0.7s;
+	transition-property: margin-left;
+	width: 450px;
+	z-index: 1000;
+}
+
+.select ul{
+	margin-left: -140px;
+	padding-top: 450px;
+}
+
+.select label{
+	color: #072a49;
+	font-weight: bold;
+	left: 280px;
+	position: absolute;
+	top: 20px;
+}
+
+.select ul li a{
+	color: #072a49;
+	display: block;
+	font-size: 1.5em;
+	margin-bottom: -80px;
+	margin-left: 180px;
+	width: 200px;
+}
+
+section input[type=checkbox]:checked + div{
+	margin-left: 0;
+}
+
+.navbas{
+	text-align: left;
+	margin-bottom: 60px;
+}
+
+.navbas li{
+	list-style-type: none;
+}
+
+.navbas li a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 25px;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+------------------------ FOOTER ---------------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+footer{
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+	padding-top: 5px;
+	border-top: solid 1px #D13D3D;
+	font-weight: bold;
+}
+
+footer > p{
+	margin-bottom: 30px;
+	font-size: 0.8em;
+}
+
+footer > ul{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	list-style-type: none;
+	margin-bottom: 30px;
+}
+
+footer > ul > li > a{
+	color: #D13D3D;
+	font-size: 0.8em;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+footer > ul > li > a:hover{
+	border-bottom: 1px solid #D13D3D;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+-------------------- VERSION BUREAU -----------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+@media screen and (min-width: 980px){
+
+	body{
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.conteneur-global{
+		display: flex;
+		padding-bottom: 100px;
+	}
+
+/*-----------------------------------------------------
+----------------------- GAUCHE ------------------------
+-----------------------------------------------------*/
+
+		.conteneur-l{
+		margin-top: 0px;
+		width: 65%;
+	}
+
+		.conteneur-l > h1{
+		font-size: 3em;
+		letter-spacing: -2px;
+		line-height: 40px;
+		margin-left: 40px;
+		margin-top: 40px;
+		width: 150px;
+	}
+
+	.conteneur-l > h1 > a{
+		color: #c94949;
+		text-decoration: none;
+	}
+
+	article h1{
+		border-bottom: none;
+		font-size: 4em;
+		letter-spacing: -2px;
+		padding: 20px 0px 80px 100px;
+		text-align: left;
+	}
+
+	.bloc-texte > h2, .bloc-texte >p{
+		margin-bottom: 20px;
+		padding-left: 0px;
+		width: 450px;
+	}
+
+	.cam{
+		box-shadow: 120px -50px #342f3b;
+		left: 550px;
+		position: absolute;
+		top: 230px;
+		width: 400px;
+		z-index: -1;
+	}
+
+	.bloc-texte{
+		margin-left: 200px;
+		width: 500px;
+	}
+
+	.bloc-texte p, .bloc-texte h2{
+		color: #cdd5db;
+		margin-bottom: 30px;
+	}	
+
+	.contact{
+		display: flex;
+	}
+
+	.contact a, .contact p{
+		color: #cdd5db;
+		font-weight: bold;
+		margin-right: 10px;
+		text-decoration: none;
+	}
+
+	.befcontact{
+		margin-bottom: 0px;
+	}
+
+	span{
+		font-weight: bold;
+	}
+
+	/*---------------------------------------------------
+	-------------------- PARTIE DROITE -----------------
+	---------------------------------------------------*/
+
+	/*---------------------------------------------------
+	---------------------- HIDDEN  ----------------------
+	---------------------------------------------------*/
+
+	.conteneur-d{
+		overflow: hidden;
+		position: initial;
+		width: 35%;
+	}
+
+	.conteneur-d > nav{
+		display: flex;
+		flex-flow: row;
+		height: 100%;
+	}
+
+	.conteneur-d nav a{
+		color: #c94949;
+		display: block;
+		font-size: 1.2em;
+		font-weight: bold;
+		letter-spacing: -2px;
+		margin: 100px 0px 0px 140px;
+		text-decoration: none;
+		width: 150px;
+	}
+
+	.conteneur-d nav label{
+		display: block;
+		font-size: 1.2em;
+		font-weight: bold;
+		letter-spacing: -2px;
+		margin-right: 40px;
+		margin-top: 100px;
+	}
+
+	.select{
+		background-color: #c94949;
+		height: 100%;
+		margin-left: 500px;
+		position: fixed;
+		transition-duration: 0.7s;
+		transition-property: margin-left;
+		width: 450px;
+		z-index: 1000;
+	}
+
+	section input[type=checkbox]:checked + div{
+		margin-left: 25px;
+	}
+
+	.select label{
+		color: #072a49;
+		left: 300px;
+		position: absolute;
+		top: -50px;
+	}
+
+	.select ul{
+		margin-left: -140px;
+		padding-top: 160px;
+	}
+
+	.select ul li{
+			list-style-type: none;
+	}
+
+	.select ul li a{
+		color: #072a49;
+		display: block;
+		font-size: 1.5em;
+		margin-bottom: -80px;
+		margin-left: 180px;
+		width: 200px;
+	}
+
+	.navbas{
+		text-align: left;
+	}
+
+	section input[type=checkbox]{
+		display: none;
+	}
+
+	/*---------------------------------------------------
+	------------------------ FOOTER ---------------------
+	---------------------------------------------------*/
+	
+	footer{
+		position: relative;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 5px 40px;
+		border-top: none;
+	}
+
+	footer ul{
+		display: flex;
+	}
+
+	footer ul li{
+		margin-left: 20px;
+	}
+
+	/*---------------------------------------------------
+	-------------------- TRANSITION ---------------------
+	---------------------------------------------------*/
+
+	.d1{
+		transition-property: font-size width;
+		transition-duration: 0.2s;
+	}
+
+	.d1:hover{
+		width: 400px;
+		font-size: 3.5em;
+	}
+}
