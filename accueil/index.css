@@ -1,0 +1,202 @@
+*{
+	box-sizing: border-box;
+	font-family: Avenir, sans-serif;
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #072a49;
+	color: #c94949;
+}
+
+section{
+	margin-top: 100px;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+-------------------------- TITLE --------------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+h1{
+	font-size: 6em;
+	line-height: 75px;
+	margin-bottom: 100px;
+	margin-left: 10px;
+	width: 300px;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+-------------------------- MENU ---------------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+nav > ul{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	list-style-type: none;	
+}
+
+nav > ul > li > a{
+	color: #c94949;
+	display: flex;
+	flex-flow: column wrap;
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+nav > ul > li > a > span > img{
+	width: 300px;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+-------------------------- FOOTER -------------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+footer{
+	display: flex;
+	flex-flow: column wrap;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: 20px;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer ul li a{
+	color: #c94949;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+footer ul li a:hover{
+	border-bottom: 1px solid #c94949;
+}
+
+/* --------------------------------------------------
+-----------------------------------------------------
+------------------ VERSION BUREAU -------------------
+-----------------------------------------------------
+-------------------------------------------------- */
+
+@media screen and (min-width: 980px){
+	body{
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	section{
+		flex-grow: 1;
+		margin-left: 250px;
+		margin-top: 150px;
+	}
+
+	h1{
+		margin-bottom: 40px;
+	}
+
+/* --------------------------------------------------
+--------------------- BOUTON ------------------------
+-------------------------------------------------- */
+
+	nav {
+		margin-left: 80px;
+	}
+
+	nav > ul{
+		flex-flow: column wrap;
+		width: 250px;
+	}
+
+	nav ul li a{
+		line-height: 20px;
+	}
+
+	nav:hover ul li a{
+		color: rgba(209, 61, 61, 0.7);
+	}
+
+	nav ul li a:hover{
+		color: #c94949;
+	}
+
+	.btn a:hover span{
+		opacity: 1;
+	}
+
+	.btn a span{
+		position: absolute;
+		top: 0px;
+		left: 400px;
+		z-index: -1;
+		opacity: 0;
+		transition: opacity 0.5s;
+	}
+
+/* --------------------------------------------------
+--------------------- IMAGE -------------------------
+-------------------------------------------------- */
+
+	nav ul li a span img{
+		width: 500px;
+	}
+
+/* --------------------------------------------------
+--------------------- FOOTER ------------------------
+-------------------------------------------------- */
+	footer{
+		position: relative;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding: 5px 40px;
+		border-top: none;
+	}
+
+	footer ul{
+		display: flex;
+	}
+
+	footer ul li{
+		margin-left: 20px;
+	}
+
+/* --------------------------------------------------
+--------------------- TRANSITION --------------------
+-------------------------------------------------- */
+
+	.d1{
+		transition-property: font-size;
+		transition-duration: 0.5s;
+	}
+
+	.d1:hover{
+		font-size: 3.5em;
+	}
+	
+}
+
+
+
+
+
+
+
+
