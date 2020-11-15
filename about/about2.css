@@ -187,6 +187,19 @@ section input[type=checkbox]:checked + div{
 	line-height: 25px;
 }
 
+@media screen and (min-width: 440px){
+	.select{
+		margin-left: 800px;
+	}
+	section input[type=checkbox]:checked + div{
+		margin-left: 300px;
+	}
+	.conteneur-d nav a{
+		margin-left: 62%;
+	}
+
+}
+
 /* --------------------------------------------------
 -----------------------------------------------------
 ------------------------ FOOTER ---------------------
